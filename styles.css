@@ -1,0 +1,72 @@
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+
+  margin: auto;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+  font-family: "Raleway", sans-serif;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+}
+
+table th {
+  font-family: "Karla", sans-serif;
+}
+table td {
+  padding: 0.01em;
+  text-align: center;
+  font-family: "Murecho", sans-serif;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 98%;
+    margin: auto;
+  }
+  table th {
+    font-size: 0.9em;
+  }
+  table tr {
+    font-size: 0.9em;
+  }
+}
+
+.spinner {
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #474bff 94%, #0000) top/9px 9px
+      no-repeat,
+    conic-gradient(#0000 30%, #474bff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spin-c7wet2 1s infinite linear;
+  position: absolute; /* cambiamos de fixed a absolute */
+  /* Ponemos el valor de left, bottom, right y top en 0 */
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto; /* Centramos vertical y horizontalmente */
+}
+
+@keyframes spin-c7wet2 {
+  100% {
+    transform: rotate(1turn);
+  }
+}

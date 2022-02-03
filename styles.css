@@ -1,10 +1,16 @@
 table {
   border-collapse: collapse;
-  margin: 0;
+  
   padding: 0;
   width: 80%;
 
   margin: auto;
+  
+}
+
+img{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 table caption {
@@ -69,4 +75,22 @@ table th {
   100% {
     transform: rotate(1turn);
   }
+}
+.foot{
+  background-color: #333;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin-top: 15px;
+  
+}
+.titulofoot{
+  font-family: 'arial';
+  font-size: 20px;
+  color: white;
+  text-align: center;
+ 
 }

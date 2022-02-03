@@ -8,6 +8,7 @@ fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
   .catch((error) => console.log(error))
   .finally(() => {
     $spinner.style.display = "none";
+   
   });
 
 

@@ -50,6 +50,9 @@ table th {
   table tr {
     font-size: 0.9em;
   }
+  table td{
+    font-size: 1em;
+  }
 }
 
 .spinner {

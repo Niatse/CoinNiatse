@@ -34,7 +34,7 @@ const mostrarData = (data) => {
       maximumSignificantDigits: 10,
     }).format(marketCap);
 
-    body += `<tr><td>${data[i].market_cap_rank}</td><td><img  src=${data[i].image} class="img" width="50vw" height="50vh"></td><td>${data[i].name}</td><td>${precios}</td><td>${marketCaps} </td></tr>`;
+    body += `<tr><td>${data[i].market_cap_rank}</td><td><img  src=${data[i].image} alt="img" class="img" width="50vw" height="50vh"></td><td>${data[i].name}</td><td>${precios}</td><td>${marketCaps} </td></tr>`;
   }
   document.getElementById("data").innerHTML = body;
 };
